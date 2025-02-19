@@ -8,12 +8,14 @@ import Contact from "./components/Contact";
 import Shop from "./components/Shop";
 import Product from "./components/Product";
 import Footer from "./components/Footer";
+import NavBanner from "./components/NavBanner";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <NavBar />
+        <NavBanner/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
