@@ -17,14 +17,14 @@ const Hero = () => {
           >
             100% QUALITY GUARANTEED
           </motion.p>
-          <motion.h1
+          <motion.h1 className="hero-h1"
             variants={SlideRight(0.6)}
             initial="hidden"
             animate="visible"
           >
             FIND YOUR PERFECT <span className="hero-span">STREETWEAR</span>
           </motion.h1>
-          <motion.p
+          <motion.p className="hero-p"
             variants={SlideRight(0.8)}
             initial="hidden"
             animate="visible"
@@ -49,7 +49,7 @@ const Hero = () => {
           </motion.div>
         </div>
         {/* Image Section */}
-        <div className="hero-image">
+        {/* <div className="hero-image">
           <motion.img
             initial={{ opacity: 0, x: 200 }}
             animate={{ opacity: 1, x: 0 }}
@@ -57,7 +57,7 @@ const Hero = () => {
             src={HeroImg}
             alt="hero-image"
           />
-        </div>
+        </div> */}
       </div>
     </>
   );

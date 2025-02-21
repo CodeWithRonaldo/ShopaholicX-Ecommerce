@@ -56,23 +56,35 @@
 
 .hero-container{
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
   gap: 40px; 
   padding: 50px;
-  background-color: #f5f5f5;
+  /* background-color: #f5f5f5; */
+  background-image: url('./assets/canyon1.jpg');
+  height: 500px;
+  /* width: 1400px; */
 }
 
 .hero-content{
   flex: 1;
   max-width: 500px;
+  margin-top: 60px;
   
 }
 
-.hero-content h1 {
+.hero-p {
+  color: white;
+}
+.hero-h1{
+  color: white;
   font-size: 2.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-weight: bold;
+}
+
+.hero-content h1 {
+  
 }
 .hero-span{
   color: orange;
@@ -174,5 +186,5 @@
   padding: 0;
   box-sizing: border-box;
   
-}}
+}
 
