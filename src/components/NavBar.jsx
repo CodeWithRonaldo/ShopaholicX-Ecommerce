@@ -8,7 +8,7 @@ const NavBar = () => {
       <div className="nav-bar">
         <div>
           <NavLink to="/" className="logo">
-            LOGO
+            ShopaholicX
           </NavLink>
         </div>
         <div className="nav-links">

@@ -41,6 +41,12 @@
   cursor: pointer;
 }
 
+.logo{
+  font-size: 30px;
+  padding: 10px;
+  text-decoration: none;
+}
+
 .nav-banner{
   height: 20px;
   background-color: orange;
@@ -68,7 +74,9 @@
   margin-bottom: 10px;
   font-weight: bold;
 }
-
+.hero-span{
+  color: orange;
+}
 .hero-content p {
   font-size: 1.2rem;
   margin-bottom: 20px;
@@ -117,24 +125,24 @@
   gap: 10px;
   font:bold;
   border: none;
-  padding: 20px;
+  padding: 10px 15px;
   background-color: transparent;
+  cursor: pointer;
+}
+
+.hero-btn-play:hover{
+  background-color: orange;
+  border-radius: 10px;
+  /* padding: 10px; */
+  
 }
 .btn-icon{
-  
   color: blue;
-  font-size: 50px;
-  /* background-color: #747bff; */
-  border-radius: 20px;
-  /* padding: 10px; */
-
-  
-  /* background-color: rgb(150, 150, 240); */
-  /* padding: 3px; */
 }
 
+
 .hero-btn:hover {
-  background-color: black;
+  background-color: red;
 }
 
 .hero-image {
@@ -165,5 +173,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+  
+}}
 
