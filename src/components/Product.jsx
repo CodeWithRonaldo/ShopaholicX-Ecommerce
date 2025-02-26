@@ -6,20 +6,24 @@
 import React, { useEffect, useState } from "react";
 import Loading from "../assets/loading.gif";
 import "./Product.css";
+import axios from "axios";
 
 const Product = () => {
-  const [products, setProducts] = useState();
+  const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const response = await fetch(
-        "https://fakestoreapi.com/products?limit=20"
-      );
-      const data = await response.json();
-      setProducts(data);
-      setLoading(false);
-      console.log(data);
+      try {
+        const response = await axios.get(
+          "https://fakestoreapi.com/products?limit=40"
+        );
+        setProducts(response.data);
+      } catch (error) {
+        console.error("Error fetching products");
+      } finally {
+        setLoading(false);
+      }
     };
 
     fetchProducts();
@@ -32,19 +36,18 @@ const Product = () => {
   return (
     <div>
       <h1 className="product-heading">Products Catalogue</h1>
-      <div product-container>
-        {products &&
-          products.map((product) => (
-            <div key={product.id} className="product-card">
-              <img
-                src={product.image}
-                alt={product.title}
-                className="product-image"
-              />
-              <h3 className="product-title">{product.title}</h3>
-              <p className="product-price">${product.price}</p>
-            </div>
-          ))}
+      <div className="product-container">
+        {products.map((product) => (
+          <div key={product.id} className="product-card">
+            <img
+              src={product.image}
+              alt={product.title}
+              className="product-image"
+            />
+            <h3 className="product-title">{product.title}</h3>
+            <p className="product-price">${product.price}</p>
+          </div>
+        ))}
       </div>
     </div>
   );

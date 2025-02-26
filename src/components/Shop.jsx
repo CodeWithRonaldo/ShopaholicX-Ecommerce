@@ -1,8 +1,11 @@
 import React from 'react'
+import NewsLetter from './NewsLetter'
 
 const Shop = () => {
   return (
-    <div>Shop</div>
+    <>
+  
+    </>
   )
 }
 

@@ -15,21 +15,23 @@ const NavBar = () => {
           <NavLink to="/home" className="nav-link">
             Home
           </NavLink>
-          <NavLink to="/about" className="nav-link">
-            About
-          </NavLink>
-          <NavLink to="/contact" className="nav-link">
-            Contact
-          </NavLink>
+
           <NavLink to="/shop" className="nav-link">
             Shop
           </NavLink>
           <NavLink to="/product" className="nav-link">
             Product
           </NavLink>
-
-          <input type="text" className="search-bar" placeholder="search" />
-          <FaShoppingCart  className="cart-icon"/>
+        </div>
+        <div className="right-nav">
+          {/* <input type="text" className="search-bar" placeholder="search" /> */}
+          <NavLink to="/login">
+            <button className="nav-login">Login</button>
+          </NavLink>
+          <NavLink to="/cart">
+            <FaShoppingCart className="nav-login-cart" />
+          </NavLink>
+          <div className="nav-cart-count">0</div>
         </div>
       </div>
     </>

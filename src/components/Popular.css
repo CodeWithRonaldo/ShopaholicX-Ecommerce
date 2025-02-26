@@ -1,0 +1,40 @@
+.popular{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.popular-text {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+}
+
+.popular-products{
+    display: flex;
+    margin-top: 15px;
+    gap: 10px;
+    
+
+}
+.popular-card{
+    /* display: flex; */
+    text-align: center;
+}
+.popular-card img{
+    height: 300px;
+    width: 300px;
+    /* border-radius: 5px; */
+    
+}
+
+.popular-card :hover{
+    transform: scale(1.1);
+    transition: ease-in-out 0.5s;
+}

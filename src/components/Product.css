@@ -3,13 +3,15 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
-    /* justify-content: center; */
+    justify-content: center;
     padding: 20px;
     margin-top: 30px;
   }
 
   .product-heading{
+    margin-top: 20px;
     margin-bottom: 30px;
+    text-align: center;
   }
   
   .product-card {
