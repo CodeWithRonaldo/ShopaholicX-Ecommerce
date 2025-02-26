@@ -3,13 +3,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 30px;
+ 
   text-align: center;
   border-bottom: 1px solid grey;
+  padding: 30px;
 }
 
 .denims-container h1 {
-  margin-bottom: 20px;
+  padding: 30px;
   font-size: 15px;
   color: gray;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -17,35 +18,36 @@
 }
 
 .denims-container p {
-  margin-bottom: 20px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 30px;
+  /* padding: 20px; */
 }
 
-.denims{
-    display: flex;
-    gap: 20px;
-    margin-bottom: 20px;
-   
+.denims {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
 }
 .denims-card img {
   height: 180px;
   width: 180px;
 }
-
-.denims-card img:hover{
-    transform: scale(1.7);
-    transition: ease-in-out 0.5s;
+.denims-card{
+    margin-top: 20px;
+}
+.denims-card img:hover {
+  transform: scale(1.7);
+  transition: ease-in-out 0.5s;
 }
 
-.denims-card h2{
-    font-size: 15px;
+.denims-card h2 {
+  font-size: 15px;
 }
 
-.denims-card p{
-    font-size: 10px;
+.denims-card p {
+  font-size: 10px;
 }
-.original-price{
-    text-decoration: line-through;
-    color: grey;
+.original-price {
+  text-decoration: line-through;
+  color: grey;
 }
