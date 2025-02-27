@@ -11,6 +11,11 @@ import axios from "axios";
 const Product = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [modal, setModal] = useState(false);
+
+  const toggleModal = () => {
+    setModal(!modal);
+  };
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -36,6 +41,36 @@ const Product = () => {
   return (
     <div>
       <h1 className="product-heading">Products Catalogue</h1>
+
+      <button onClick={toggleModal} className="add-new-product-btn">
+        Add New Product
+      </button>
+      {modal && (
+        <div className="modal">
+          <div className="overlay">
+            <div className="modal-content">
+              <h2 className="modal-title">Add New Product</h2>
+              <form
+                onSubmit={(e) => {
+                  e.preventDefault();
+                }}
+              >
+                <label>Product Name:</label>
+                <input type="text" name="name" placeholder="Enter product name" />
+                <label>Product Price:</label>
+                <input type="number" name="price" placeholder="Price"/>
+                <label>Product Description:</label>
+                <textarea name="description" />
+                <button type="submit">Add Product</button>
+
+                <button onClick={toggleModal} className="close-modal">
+                  CLOSE
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      )}
       <div className="product-container">
         {products.map((product) => (
           <div key={product.id} className="product-card">
@@ -46,6 +81,7 @@ const Product = () => {
             />
             <h3 className="product-title">{product.title}</h3>
             <p className="product-price">${product.price}</p>
+            <button className="add-to-cart-btn">Add to Cart</button>
           </div>
         ))}
       </div>

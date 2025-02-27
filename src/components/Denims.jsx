@@ -3,6 +3,9 @@ import { productData } from "../assets/product_data";
 import './Denims.css'
 
 const Denims = () => {
+
+    const jeansData = productData.filter((product) => product.category === "Jeans");
+
   return (
     <div className="denims-container">
       <div >
@@ -10,7 +13,7 @@ const Denims = () => {
         <p>COMPLETE YOUR FIT ON THE LOW</p>
       </div>
       <div className="denims">
-        {productData.slice(0,6).map((product)=>(
+        {jeansData.slice(0,6).map((product)=>(
             <div key="id" className="denims-card" >
                 <img src={product.image} alt={product.name} />
                 <h2>{product.name}</h2>
