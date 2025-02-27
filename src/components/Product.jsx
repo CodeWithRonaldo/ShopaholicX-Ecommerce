@@ -1,7 +1,4 @@
-// Build Product Catalog
-// - Create product cards and listing pages.
-// - Fetch product data from an API (use Axios or Fetch API).
-// - Use React state (or Context API/Redux for more complex state) to manage product data.
+
 
 import React, { useEffect, useState } from "react";
 import Loading from "../assets/loading.gif";
@@ -72,8 +69,8 @@ const Product = () => {
         </div>
       )}
       <div className="product-container">
-        {products.map((product) => (
-          <div key={product.id} className="product-card">
+        {products.map((product, index) => (
+          <div key={index} className="product-card">
             <img
               src={product.image}
               alt={product.title}
