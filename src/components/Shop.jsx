@@ -1,6 +1,6 @@
 import React from "react";
 import { productData } from "../assets/product_data";
-import "./Shop.css"; // Import the CSS file
+import "./Shop.css"; 
 
 const Shop = () => {
   const shuffledData = productData.sort(() => Math.random() - 0.5);
@@ -19,7 +19,7 @@ const Shop = () => {
             <h2>{products.name}</h2>
             <p className="price">Price: ${products.price}</p>
             <p className="original-price">Original Price: ${products.originalPrice}</p>
-            <p className="discount">Discount: {products.discount}%</p>
+            {/* <p className="discount">Discount: {products.discount}%</p> */}
             <button className="add-to-cart-btn">Add to Cart</button>
           </div>
         ))}
