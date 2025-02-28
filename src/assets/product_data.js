@@ -13,7 +13,7 @@ import img13 from "./leroyJenkins.png";
 import img14 from "./mafioso.png";
 import img15 from "./oneDegree.png";
 import img16 from "./pablo.png";
-import img17 from "./prepCoterie.png";
+// import img17 from "./prepCoterie.png";
 import img18 from "./pvt.png";
 import img19 from "./stayWinning.png";
 import img20 from "./talent.png";
@@ -205,18 +205,18 @@ export const productData = [
     description: "Luxury silk shirt with an elegant design.",
     stock: 8,
   },
-  {
-    id: 16,
-    name: "Prep Coterie",
-    price: 220,
-    originalPrice: 270,
+  //   {
+  //     id: 16,
+  //     name: "Prep Coterie",
+  //     price: 220,
+  //     originalPrice: 270,
 
-    image: img17,
-    category: "Shirts",
-    brand: "Prep Coterie",
-    description: "Casual and stylish, perfect for everyday wear.",
-    stock: 12,
-  },
+  //     image: img17,
+  //     category: "Shirts",
+  //     brand: "Prep Coterie",
+  //     description: "Casual and stylish, perfect for everyday wear.",
+  //     stock: 12,
+  //   },
   {
     id: 17,
     name: "Private Label",
