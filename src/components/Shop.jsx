@@ -13,13 +13,13 @@ const Shop = () => {
       <p>Browse our collection of premium fashion items.</p>
       </div>
       <div className="product-card-container">
-        {shuffledData.map((product) => (
-          <div  className="product-card">
-            <img src={product.image} alt={product.name} />
-            <h2>{product.name}</h2>
-            <p className="price">Price: ${product.price}</p>
-            <p className="original-price">Original Price: ${product.originalPrice}</p>
-            <p className="discount">Discount: {product.discount}%</p>
+        {shuffledData.map((products) => (
+          <div key={products.id} className="product-card">
+            <img src={products.image} alt={products.name} />
+            <h2>{products.name}</h2>
+            <p className="price">Price: ${products.price}</p>
+            <p className="original-price">Original Price: ${products.originalPrice}</p>
+            <p className="discount">Discount: {products.discount}%</p>
             <button className="add-to-cart-btn">Add to Cart</button>
           </div>
         ))}
