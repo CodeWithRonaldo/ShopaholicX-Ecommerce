@@ -58,7 +58,7 @@
   font-weight: bold;
   text-align: center;
   color: white;
-  background-color: orange; /* Green color */
+  background-color: orange; 
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -70,7 +70,7 @@
 }
 
 .add-new-product-btn:active {
-  background-color: #1e7e34; /* Even darker green when clicked */
+  background-color: #1e7e34; 
 }
 
 .add-to-cart-btn {
@@ -82,7 +82,7 @@
   font-weight: bold;
   text-align: center;
   color: white;
-  background-color: orange; /* Green color */
+  background-color: orange; 
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -94,22 +94,21 @@
 }
 
 .add-to-cart-btn:active {
-  background-color: #1e7e34; /* Even darker green when clicked */
+  background-color: #1e7e34; 
 }
 
-/* Modal Styles */
 .modal {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.5); 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  /* z-index: 1000; Ensure it appears above other content */
+  
 }
 
 .modal-content {

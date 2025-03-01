@@ -7,10 +7,11 @@
     justify-content: center;
     margin: auto;
     padding: 0px 140px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     background: linear-gradient(180deg, orange 0%, #e1ffea22 60%);
     gap: 30px;
     margin-top: 50px;
+    
 }
 
 .newsletter h1{

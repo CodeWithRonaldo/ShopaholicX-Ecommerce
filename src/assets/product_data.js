@@ -24,10 +24,11 @@ import img24 from "./yler.png";
 
 export const productData = [
   {
-    id: 1,
+    id: crypto.randomUUID(),
     name: "Elk Denim",
     price: 100,
     originalPrice: 150,
+    discount: Math.round(((150 - 100) / 150) * 100),
     image: img1,
     category: "Jeans",
     brand: "Elk Wear",
@@ -36,10 +37,11 @@ export const productData = [
     stock: 15,
   },
   {
-    id: 2,
+    id: crypto.randomUUID(),
     name: "Green Bean Denim",
     price: 200,
     originalPrice: 250,
+    discount: Math.round(((250 - 200) / 250) * 100),
 
     image: img2,
     category: "Jeans",
@@ -48,10 +50,11 @@ export const productData = [
     stock: 10,
   },
   {
-    id: 3,
+    id: crypto.randomUUID(),
     name: "Archer Denim",
     price: 300,
     originalPrice: 350,
+    discount: Math.round(((350 - 300) / 350) * 100),
 
     image: img3,
     category: "Jeans",
@@ -61,10 +64,11 @@ export const productData = [
     stock: 8,
   },
   {
-    id: 4,
+    id: crypto.randomUUID(),
     name: "San Pedro C21",
     price: 330,
     originalPrice: 400,
+    discount: Math.round(((400 - 330) / 400) * 100),
 
     image: img5,
     category: "Jeans",
@@ -73,10 +77,11 @@ export const productData = [
     stock: 12,
   },
   {
-    id: 5,
+    id: crypto.randomUUID(),
     name: "Timeless Denim",
     price: 200,
     originalPrice: 250,
+    discount: Math.round(((250 - 200) / 250) * 100),
 
     image: img6,
     category: "Jeans",
@@ -85,10 +90,11 @@ export const productData = [
     stock: 20,
   },
   {
-    id: 6,
+    id: crypto.randomUUID(),
     name: "Amir Straight",
     price: 300,
     originalPrice: 350,
+    discount: Math.round(((350 - 300) / 350) * 100),
 
     image: img7,
     category: "Jeans",
@@ -97,10 +103,11 @@ export const productData = [
     stock: 9,
   },
   {
-    id: 7,
+    id:crypto.randomUUID(),
     name: "Dakota Skinny",
     price: 400,
     originalPrice: 450,
+    discount: Math.round(((450 - 400) / 450) * 100),
 
     image: img8,
     category: "Jeans",
@@ -109,10 +116,11 @@ export const productData = [
     stock: 5,
   },
   {
-    id: 8,
+    id: crypto.randomUUID(),
     name: "Granite Denim",
     price: 120,
     originalPrice: 150,
+    discount: Math.round(((150 - 120) / 150) * 100),
 
     image: img9,
     category: "Jeans",
@@ -121,10 +129,11 @@ export const productData = [
     stock: 18,
   },
   {
-    id: 9,
+    id:crypto.randomUUID(),
     name: "Urban Edge",
     price: 180,
     originalPrice: 220,
+    discount: Math.round(((220 - 180) / 220) * 100),
 
     image: img10,
     category: "Jeans",
@@ -133,10 +142,11 @@ export const productData = [
     stock: 14,
   },
   {
-    id: 10,
+    id: crypto.randomUUID(),
     name: "Culture Shock",
     price: 260,
     originalPrice: 300,
+    discount: Math.round(((300 - 260) / 300) * 100),
 
     image: img11,
     category: "T-Shirts",
@@ -145,11 +155,11 @@ export const productData = [
     stock: 7,
   },
   {
-    id: 11,
+    id: crypto.randomUUID(),
     name: "Kleep Classic",
     price: 210,
     originalPrice: 270,
-
+    discount: Math.round(((270 - 210) / 270) * 100),
     image: img12,
     category: "T-Shirts",
     brand: "Kleep Apparel",
@@ -157,11 +167,11 @@ export const productData = [
     stock: 25,
   },
   {
-    id: 12,
+    id: crypto.randomUUID(),
     name: "Leroy Jenkins",
     price: 250,
     originalPrice: 310,
-
+    discount: Math.round(((310 - 250) / 310) * 100),
     image: img13,
     category: "T-Shirts",
     brand: "Leroy",
@@ -169,11 +179,11 @@ export const productData = [
     stock: 13,
   },
   {
-    id: 13,
+    id: crypto.randomUUID(),
     name: "Mafioso Fit",
     price: 280,
     originalPrice: 330,
-
+    discount: Math.round(((330 - 280) / 330) * 100),
     image: img14,
     category: "Shirts",
     brand: "Mafioso",
@@ -181,11 +191,11 @@ export const productData = [
     stock: 10,
   },
   {
-    id: 14,
+    id: crypto.randomUUID(),
     name: "One Degree",
     price: 320,
     originalPrice: 400,
-
+    discount: Math.round(((400 - 320) / 400) * 100),
     image: img15,
     category: "Shirts",
     brand: "One Degree",
@@ -194,10 +204,11 @@ export const productData = [
     stock: 6,
   },
   {
-    id: 15,
+    id: crypto.randomUUID(),
     name: "Pablo Premium",
     price: 290,
     originalPrice: 350,
+    discount: Math.round(((350 - 290) / 350) * 100),
 
     image: img16,
     category: "Shirts",
@@ -205,24 +216,13 @@ export const productData = [
     description: "Luxury silk shirt with an elegant design.",
     stock: 8,
   },
-  //   {
-  //     id: 16,
-  //     name: "Prep Coterie",
-  //     price: 220,
-  //     originalPrice: 270,
 
-  //     image: img17,
-  //     category: "Shirts",
-  //     brand: "Prep Coterie",
-  //     description: "Casual and stylish, perfect for everyday wear.",
-  //     stock: 12,
-  //   },
   {
-    id: 17,
+    id: crypto.randomUUID(),
     name: "Private Label",
     price: 300,
     originalPrice: 380,
-    // discount: Math.round(((380 - 300) / 380) * 100),
+    discount: Math.round(((380 - 300) / 380) * 100),
     image: img18,
     category: "Shirts",
     brand: "Private Label",
@@ -230,11 +230,11 @@ export const productData = [
     stock: 9,
   },
   {
-    id: 18,
+    id: crypto.randomUUID(),
     name: "Stay Winning",
     price: 280,
     originalPrice: 350,
-    // discount: Math.round(((350 - 280) / 350) * 100),
+    discount: Math.round(((350 - 280) / 350) * 100),
     image: img19,
     category: "Shirts",
     brand: "Stay Winning",
@@ -242,11 +242,11 @@ export const productData = [
     stock: 10,
   },
   {
-    id: 19,
+    id: crypto.randomUUID(),
     name: "Polo Premium",
     price: 240,
     originalPrice: 300,
-    // discount: Math.round(((300 - 240) / 300) * 100),
+    discount: Math.round(((300 - 240) / 300) * 100),
     image: img20,
     category: "Shirts",
     brand: "Polo Premium",
@@ -254,11 +254,11 @@ export const productData = [
     stock: 11,
   },
   {
-    id: 20,
+    id: crypto.randomUUID(),
     name: "TLR",
     price: 260,
     originalPrice: 320,
-    // discount: Math.round(((320 - 260) / 320) * 100),
+    discount: Math.round(((320 - 260) / 320) * 100),
     image: img21,
     category: "Shirts",
     brand: "TLR",
@@ -266,11 +266,11 @@ export const productData = [
     stock: 12,
   },
   {
-    id: 21,
+    id: crypto.randomUUID(),
     name: "Trojans",
     price: 220,
     originalPrice: 270,
-    // discount: Math.round(((270 - 220) / 270) * 100),
+    discount: Math.round(((270 - 220) / 270) * 100),
     image: img22,
     category: "Shirts",
     brand: "Trojans",
@@ -278,11 +278,11 @@ export const productData = [
     stock: 13,
   },
   {
-    id: 22,
+    id: crypto.randomUUID(),
     name: "Weiv",
     price: 280,
     originalPrice: 340,
-    // discount: Math.round(((340 - 280) / 340) * 100),
+    discount: Math.round(((340 - 280) / 340) * 100),
     image: img23,
     category: "Shirts",
     brand: "Weiv",
@@ -290,11 +290,11 @@ export const productData = [
     stock: 14,
   },
   {
-    id: 23,
+    id: crypto.randomUUID(),
     name: "Tyler",
     price: 240,
     originalPrice: 290,
-    // discount: Math.round(((290 - 240) / 290) * 100),
+    discount: Math.round(((290 - 240) / 290) * 100),
     image: img24,
     category: "Shirts",
     brand: "Tyler",

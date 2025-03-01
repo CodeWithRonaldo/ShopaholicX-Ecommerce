@@ -14,7 +14,7 @@ const Denims = () => {
       </div>
       <div className="denims">
         {jeansData.slice(0,6).map((product)=>(
-            <div key="id" className="denims-card" >
+            <div key={product.id} className="denims-card" >
                 <img src={product.image} alt={product.name} />
                 <h2>{product.name}</h2>
                 <p>Price: ${product.price}</p>

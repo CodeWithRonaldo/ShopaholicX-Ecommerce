@@ -12,7 +12,7 @@ const Popular = () => {
 
       <div className="popular-products">
         {popularData.map((popular) => (
-          <div key="id" className="popular-card">
+          <div key={popular.id} className="popular-card">
             <img src={popular.img} alt={popular.name} />
             <h2>{popular.name}</h2>
             <p>Price: ${popular.price}</p>
