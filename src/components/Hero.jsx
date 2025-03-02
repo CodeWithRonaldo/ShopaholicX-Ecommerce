@@ -32,7 +32,7 @@ const Hero = () => {
             We help you find the best streetwear brands and products that fit
             your style and budget.
           </motion.p>
-          {/* button section */}
+          
           <motion.div
             variants={SlideRight(1.0)}
             initial="hidden"
@@ -40,12 +40,12 @@ const Hero = () => {
             className="hero-btns"
           >
             <button className="hero-btn">Shop Now</button>
-            <button className="hero-btn-play">
+            {/* <button className="hero-btn-play">
               Learn more 
               <span className="hero-btn-span">
                 <FaArrowRight className="btn-icon" />
               </span>
-            </button>
+            </button> */}
           </motion.div>
         </div>
         {/* Image Section */}

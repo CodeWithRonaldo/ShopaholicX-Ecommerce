@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { productData } from "../assets/product_data";
 import Product from "./Product"; 
 import "./Shop.css"; 
+import { CartContext } from "./ContextProvider";
 
 const Shop = () => {
+  const { dispatch } = useContext(CartContext);
   const [products, setProducts] = useState(productData); 
 
   const addProduct = (newProduct) => {
@@ -24,7 +26,11 @@ const Shop = () => {
             <p className="price">Price: ${product.price}</p>
             <p className="original-price">Original Price: ${product.originalPrice}</p>
             <p className="discount">Discount: {product.discount}%</p>
-            <button className="add-to-cart-btn">Add to Cart</button>
+            <button 
+              onClick={() => dispatch({ type: "Add", product })} 
+              className="add-to-cart-btn">
+              Add to Cart
+            </button>
           </div>
         ))}
       </div>

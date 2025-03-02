@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { NavLink } from "react-router-dom"; 
 import { FaShoppingCart } from "react-icons/fa";
+import { CartContext } from "./ContextProvider";
+
 
 const NavBar = () => {
+
+  const {cart} = useContext(CartContext)
   return (
     <>
       <div className="nav-bar">
@@ -31,7 +35,7 @@ const NavBar = () => {
           <NavLink to="/cart">
             <FaShoppingCart className="nav-login-cart" />
           </NavLink>
-          <div className="nav-cart-count">0</div>
+          <div className="nav-cart-count">{cart.length}</div>
         </div>
       </div>
     </>

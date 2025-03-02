@@ -1,21 +1,31 @@
-import React from "react";
+import React, { useContext } from "react";
+import { CartContext } from "./ContextProvider";
+import CartProduct from "./CartProduct";
 
-const Cart = ({ cartItems }) => {
+const Cart = () => {
+  const { cart } = useContext(CartContext);
+
+  const totalItems = cart?.length || 0;
+  const totalPrice = cart?.reduce(
+    (total, product) => total + (product.price || 0) * (product.quantity || 1),
+    0
+  );
+
   return (
-    <div className="cart-container">
-      <h2>Your Cart</h2>
-      {cartItems.length === 0 ? (
-        <p>Your cart is empty.</p>
-      ) : (
-        <ul>
-          {cartItems.map((item, index) => (
-            <li key={index}>
-              {item.name} - ${item.price}
-            </li>
-          ))}
-        </ul>
-      )}
-      <button className="checkout-btn">Checkout</button>
+    <div className="container">
+      <h2>Your Products</h2>
+      <div className="row">
+        {totalItems === 0 ? (
+          <p>Your cart is empty.</p>
+        ) : (
+          cart.map((p) => <CartProduct key={p.id} product={p} />)
+        )}
+      </div>
+      <div className="total">
+        <h5>Total Items: {totalItems}</h5>
+        <h5>Total Price: ${totalPrice.toFixed(2)}</h5>
+        <button className="checkout-btn">Checkout</button>
+      </div>
     </div>
   );
 };
